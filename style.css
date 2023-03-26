@@ -1,0 +1,386 @@
+
+body{
+    background-color: rgb(255, 255, 255);
+    background-image: url(images/pattern05.png);
+}
+
+
+.container{
+    box-shadow: 0px 0px 10px 5px #0000003d;
+    padding: 0;
+    background-color: #fff;
+}
+
+/* la barre de navigation */
+nav{
+    background-color: green;
+}
+
+/* *les liens de la barre */
+nav a.nav-link{
+    padding-top: 18px;
+    padding-bottom: 18px;
+
+    color: #fff;
+    text-transform: uppercase;
+    transition: 200ms;
+    z-index: 20;
+}
+
+nav a.nav-link:hover{
+    color: #ff9900;
+    background-color: #fff;
+}
+
+nav .navbar-brand{
+    text-transform: uppercase;
+    color: #fff;
+}
+
+nav .navbar-brand:hover{
+    color: #fff;
+}
+
+/* la barre de navigation */
+.navbar{
+    height: 60px;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    position: sticky;
+    top: -2px;
+    z-index: 20;
+}
+
+.navbar-nav{
+    background-color: green;
+    z-index: 20;
+}
+
+/* le conteneur du menu deroulalnt */
+.navbar .dropdown-menu{
+    min-width: 250px;
+    background-color: #fff;
+}
+
+
+/* le menu deroullant */
+.navbar .dropdown-item{
+    padding: 20px;
+    padding-left: 20px;
+}
+
+.navbar .dropdown-item:hover{
+    border-bottom: 2px solid #ff9900;
+}
+
+nav .container-fluid{
+    background-color: green;
+}
+
+
+/* 
+    info marquee
+*/
+
+.info-marque{
+    height: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    color: #fff;
+    background: rgb(255, 153, 0);
+}
+
+.info-marque h6{
+    position: absolute;
+    bottom: -8px;
+    height: 40px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    background-color: green;
+    z-index: 1;
+}
+
+.info-marque marquee{
+    color: rgb(255, 255, 255);
+}
+
+section{
+    padding: 0 3%;
+    margin-bottom: 20px;
+}
+
+/* -------------------------------------------------------------
+    LA SECTION A LA UNE
+------------------------------------------------------------ */
+section.alaune{
+    background-color: #dfdfdf;
+    padding-bottom: 20px;
+    /* background-image: url('images/pattern02.png'); */
+
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0px 0px 5px 1px #00000021;
+}
+
+
+section.actualite{
+    padding-top: 0px;
+}
+
+
+/* le titre de la section actualité */
+section h4{
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+section h4::after{
+    position: absolute;
+    content: "";
+    left: 0px;
+    bottom: -1px;
+    width: 80px;
+    height: 3px;
+    background-color: rgb(255, 174, 0);
+}
+
+
+/* *** le caroussel *** */
+section .d-block{
+    height: 60vh;
+    width: fit-content;
+    background-color: #444;
+    border: none;
+}
+
+section img.img1, section img.img2, section img.img3 {
+    background-size: cover;
+    position: center;
+}
+
+section img.img1{
+    background-image: url('images/ministereEdication.jpg');
+}
+
+section img.img2{
+    background-image: url('images/eleveAfrique01.jpg');
+}
+
+section img.img3{
+    background-image: url('images/eleve04.png');
+}
+
+
+/* *** actualité-fondateur *** */
+.actualité-fondateur{
+    padding: 20px;
+    margin-left: -12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.actualité-fondateur .image{
+    width: 100%;
+    height: 25vh;
+    margin-bottom: 20px;
+    background-image: url('images/madameladren.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.actualité-fondateur .card-fondateur{
+    padding: 10px;
+
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 1px #00000028;
+}
+
+.actualité-fondateur .contain{
+    max-width: 100%;
+    text-align: center;
+}
+
+
+
+/* -------------------------------------------------------------
+    LA SECTION ACTUALITES
+------------------------------------------------------------ */
+section .card-actualite{
+    margin-bottom: 20px;
+    padding: 10px 0 60px 10px;
+    position: relative;
+
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+}
+
+section .card-actualite .head{
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+
+    color: rgb(247, 73, 73);
+    background-color: rgb(240, 240, 240);
+}
+
+section.actualite i{
+    margin-right: 10px;
+}
+
+section .card-actualite button{
+    padding: 5px 20px;
+    border: 2px solid green;
+    transition: all 200ms;
+
+    right: 20px;
+    position: absolute;
+    color: green;
+}
+
+
+section .card-actualite button:hover{
+    color: #fff;
+    background-color: green;
+}
+
+section  button.more{
+    padding: 5px 20px;
+    border: 2px solid rgb(255, 145, 0);
+    margin-bottom: 40px;
+
+    right: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 145, 0);
+}
+
+/**** actualite-right  *****/
+section.actualite sidebar{
+    background-color: rgb(255, 145, 0);
+}
+
+section.actualite sidebar .contain{
+    padding: 20px;
+    margin-bottom: 20px;
+
+    background-color: #fff;
+
+    box-shadow: 0px 0px 5px 1px #00000028;
+}
+
+section.actualite sidebar .contain a.link{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* -------------------------------------------------------------
+    LA SECTION INFO
+------------------------------------------------------------ */
+section.info .cardre .card-info{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 5px 1px #00000028;
+}
+
+
+section.info .cardre .card-info button{
+    padding: 5px 20px;
+    border: 2px solid rgb(255, 145, 0);
+    transition: all 200ms;
+
+    color: rgb(255, 145, 0);
+}
+
+section.info .cardre .card-info button:hover{
+    color: #fff;
+    background-color: rgb(255, 145, 0);
+}
+
+section.info .cardre .card-info .image{
+    width: 100%;
+    height: 25vh;
+    margin-bottom: 20px;
+    background-size: cover;
+    transition: 300ms;
+}
+
+section.info .cardre .card-info .image:hover{
+    background-position: right;
+}
+
+section.info .cardre .card-info .img1 {
+    background-image: url('images/eleveaa.jpg');
+}
+
+section.info .cardre .card-info .img2 {
+    background-image: url('images/eleve02.jpg');
+}
+
+section.info .cardre .card-info .img3 {
+    background-image: url('images/eleve03.jpg');
+}
+
+section.info .cardre .card-info .img4 {
+    background-image: url('images/eleve04.png');
+}
+
+section.info .cardre .card-info .img5 {
+    background-image: url('images/eleveAfrique01.jpg');
+}
+
+section.info .cardre .card-info .img6 {
+    background-image: url('images/eleveaa.jpg');
+}
+
+
+
+
+/* -------------------------------------------------------------
+    LE FOOTER
+------------------------------------------------------------ */
+footer{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: #444;
+}
+
+
+
+/* le flash */
+#flash{
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    width: 100%;
+
+    color: #fff;
+    background-color: #000000;
+    z-index: 2;
+}
+
+#flash span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: bold;
+    padding: 13px;
+    background-color: red;
+    z-index: 3;
+}
+
